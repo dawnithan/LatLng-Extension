@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Map Coordinates",
+  "description": "Quickly find lat/lng coordinates",
+  "version": "1.0",
+  
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "PopupMap.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+   "content_security_policy":"script-src 'self' https://unpkg.com; object-src 'self'"
+}
