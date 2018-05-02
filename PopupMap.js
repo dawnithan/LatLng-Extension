@@ -9,6 +9,14 @@ L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
 	maxZoom: 18
 }).addTo(map);
 
+L.Control.geocoder({
+	position: "bottomleft",
+	showResultIcons: false
+}).addTo(map);
+
+// var osmGeocoder = new L.Control.OSMGeocoder();
+// map.addControl(osmGeocoder);
+
 map.on('click', onMapClick);
 
 var popup = L.popup();
